@@ -1,0 +1,14 @@
+.header nav {
+  --bs-navbar-color: #000;
+  font-weight: bold;
+}
+
+.link {
+  box-sizing: content-box;
+  padding: 10px;
+}
+
+.link:hover {
+  color: #dc3545;
+  cursor: pointer;
+}
