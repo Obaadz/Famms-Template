@@ -1,10 +1,13 @@
 import type { NextPage } from "next";
+import LandingSection from "../components/landing";
 import MainLayout from "../layouts/MainLayout";
 
 const Home: NextPage = () => {
   return (
     <MainLayout>
-      <main></main>
+      <main>
+        <LandingSection />
+      </main>
     </MainLayout>
   );
 };

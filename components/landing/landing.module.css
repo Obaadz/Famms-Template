@@ -1,0 +1,55 @@
+.landing {
+  background: url("../../public/images/slider-bg.jpg");
+  background-size: cover;
+  background-position: bottom bottom;
+}
+
+.carousel > div:first-child {
+  bottom: -50px;
+}
+
+.carousel > div:last-child h1,
+.carousel > div:last-child h2 {
+  color: #f7444e;
+}
+
+.carousel > div:last-child h1 span,
+.carousel > div:last-child h2 span {
+  color: #002c3e;
+}
+
+.carousel > div:last-child h1,
+.carousel > div:last-child h2,
+.carousel > div:last-child h1 span,
+.carousel > div:last-child h2 span {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.carousel > div:last-child p {
+  font-size: 1.275rem;
+}
+
+@media (max-width: 767px) {
+  .landing {
+    background-position: center center;
+  }
+  .carousel > div:last-child h1,
+  .carousel > div:last-child h2,
+  .carousel > div:last-child h1 span,
+  .carousel > div:last-child h2 span {
+    font-size: 2.5rem;
+  }
+  .carousel > div:last-child p {
+    font-size: 1.1rem;
+  }
+}
+
+.carousel > div:last-child button {
+  font-weight: 700;
+}
+
+.carousel > div:last-child button:hover {
+  background-color: transparent;
+  color: #f7444e;
+}
