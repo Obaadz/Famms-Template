@@ -1,5 +1,4 @@
-import { useEffect, useRef } from "react";
-import type { ComponentType } from "react";
+import { FC, useEffect, useRef } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { updateHeight } from "../../redux/slice/headerSlice";
@@ -7,12 +6,11 @@ import Logo from "../Logo";
 import PagesDropDown from "./PagesDropDown";
 import ShopInfo from "./ShopInfo";
 import styles from "./header.module.css";
+import NavLink from "./NavLink";
 
-const Header: ComponentType = () => {
+const Header: FC = () => {
   const headerRef = useRef<HTMLElement | null>(null);
   const dispatch = useDispatch();
-  // TODO: change the location of variable
-  // const height = useSelector((state: RootState) => state.header.height);
 
   useEffect(() => {
     const headerHeight = getHeaderHeight();
@@ -36,11 +34,11 @@ const Header: ComponentType = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-uppercase gap-3">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <NavLink pagePath="/">Home</NavLink>
               <PagesDropDown />
-              <Nav.Link href="#link">Products</Nav.Link>
-              <Nav.Link href="#link">Blog</Nav.Link>
-              <Nav.Link href="#link">Contact</Nav.Link>
+              <NavLink pagePath="/products">Products</NavLink>
+              <NavLink pagePath="/blog">Blog</NavLink>
+              <NavLink pagePath="/contact">Contact</NavLink>
             </Nav>
           </Navbar.Collapse>
           <ShopInfo />
