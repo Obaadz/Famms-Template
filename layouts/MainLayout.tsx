@@ -1,16 +1,19 @@
-import { ReactElement } from "react";
+import { ReactNode } from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 type Props = {
-  children: ReactElement;
+  children: ReactNode;
+  background?: "dark";
 };
 
-const MainLayout = ({ children }: Props) => {
+const MainLayout = ({ children, background }: Props) => {
   return (
-    <div>
+    <>
       <Header />
       {children}
-    </div>
+      <Footer background={background ? background : "light"} />
+    </>
   );
 };
 

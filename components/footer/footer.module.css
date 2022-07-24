@@ -1,0 +1,36 @@
+.light {
+  background-color: #f8f9f9;
+}
+
+.dark {
+  background-color: #0d2c3e;
+  color: white;
+}
+
+.light strong,
+.dark strong,
+.light h3,
+.dark h3 {
+  text-transform: uppercase;
+}
+
+.list li {
+  text-transform: capitalize;
+}
+
+.list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyrights {
+  color: white;
+}
+
+.light .copyrights {
+  background-color: #232322;
+}
+
+.copyrights span {
+  color: #f7444e;
+}

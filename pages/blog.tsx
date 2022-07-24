@@ -5,7 +5,7 @@ import WhyShopSection from "../components/why_shop";
 
 const Blog: FC = () => {
   return (
-    <MainLayout>
+    <MainLayout background="dark">
       <BlogList />
       <WhyShopSection />
     </MainLayout>
