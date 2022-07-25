@@ -1,0 +1,18 @@
+.arrival {
+  background-color: #d5cfd0;
+}
+
+.arrival h2 {
+  color: #0c2c3f;
+}
+
+.arrival h2::after {
+  content: "#";
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.arrival h2:hover::after {
+  content: "#";
+  opacity: 1;
+}
