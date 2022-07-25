@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { Container, Carousel } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
+import type { RootState } from "../../redux/store";
 import carouselItemsData from "./carouselItemsData";
 import CarouselItem from "./CarouselItem";
 import styles from "./landing.module.css";
