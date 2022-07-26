@@ -10,7 +10,7 @@ const ArrivalSection: FC = (props: Props) => {
       <Container>
         <div className="row justify-content-between pt-3">
           <img
-            src="images/arrival-bg.png"
+            src="images/arrival-bg.webp"
             alt="Arrival Section Image"
             className="d-none d-lg-block col-lg-4"
           />

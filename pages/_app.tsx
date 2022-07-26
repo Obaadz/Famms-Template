@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Ecommerce app</title>
         <meta name="description" content="Ecommerce app" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.webp" />
       </Head>
       <Component {...pageProps} />
     </Provider>
