@@ -1,0 +1,26 @@
+.item {
+  background-color: #f8f9f8;
+  border-right: 10px solid #ffffff;
+  border-bottom: 10px solid #ffffff;
+  box-shadow: 5px 5px 5px -5px rgb(0 0 0 / 10%);
+}
+
+@media (max-width: 767px) {
+  .item {
+    border: none;
+  }
+}
+
+.item img {
+  height: 200px;
+}
+
+.item span {
+  color: #002c3e;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #f7444e;
+}
