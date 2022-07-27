@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Button } from "react-bootstrap";
+import CustomButton from "../CustomButton";
 import type { CarouselData } from "./carouselItemsData";
 
 type Props = {
@@ -14,9 +14,7 @@ const CarouselItem: FC<Props> = ({ data }) => {
         <span>{data.title.sub}</span>
       </h1>
       <p>{data.description}</p>
-      <Button variant="danger" className="px-4 py-2">
-        Shop Now
-      </Button>
+      <CustomButton className="fw-bold px-4 py-2">Shop Now</CustomButton>
     </>
   );
 };

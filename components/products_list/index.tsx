@@ -1,10 +1,9 @@
-import Link from "next/link";
 import { FC } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import CustomButton from "../CustomButton";
 import SectionHeading from "../SectionHeading";
 import ProductItem from "./ProductItem";
 import { productsData } from "./productsData";
-import styles from "./products_list.module.css";
 
 type Props = {
   productsLimit?: number;
@@ -31,14 +30,9 @@ const ProductsListSection: FC<Props> = ({ productsLimit }) => {
           {renderProducts()}
         </div>
         <div className="d-flex justify-content-center mt-4 mb-5">
-          <Link href="./products">
-            <Button
-              variant="danger"
-              className={`fw-normal px-5 py-2 ${styles.button}`}
-            >
-              View All Products
-            </Button>
-          </Link>
+          <CustomButton className={`fw-normal px-5 py-2`} href="./products">
+            View All Products
+          </CustomButton>
         </div>
       </Container>
     </section>

@@ -19,8 +19,3 @@
   color: #002c3e;
   font-weight: 600;
 }
-
-.button:hover {
-  background-color: transparent;
-  color: #f7444e;
-}

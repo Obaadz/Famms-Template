@@ -1,0 +1,9 @@
+.danger {
+  background-color: #f7444e;
+  color: #fff;
+}
+
+.danger:hover {
+  background-color: transparent;
+  color: #f7444e;
+}

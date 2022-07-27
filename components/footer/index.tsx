@@ -1,9 +1,10 @@
 import { FC } from "react";
-import { Button, Container, Form, InputGroup } from "react-bootstrap";
+import { Container, Form, InputGroup } from "react-bootstrap";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
 import { AccountData, MenuData } from "./navData";
 import styles from "./footer.module.css";
+import CustomButton from "../CustomButton";
 
 type Props = {
   background: "light" | "dark";
@@ -26,9 +27,7 @@ const Footer: FC<Props> = ({ background }) => {
                 aria-label="Enter Your Mail"
                 aria-describedby="basic-addon2"
               />
-              <Button variant="outline-danger" id="button-addon2">
-                Subscribe
-              </Button>
+              <CustomButton>Subscribe</CustomButton>
             </InputGroup>
           </div>
         </div>

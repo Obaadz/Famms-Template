@@ -12,7 +12,7 @@ const ProductItem: FC<Props> = ({ product }) => {
         <img src={product.img} alt={product.title} />
       </div>
       <div className=" d-flex justify-content-between">
-        <h4 className="fw-bold">{product.title}</h4>
+        <h4 className="fs-5 fw-bold">{product.title}</h4>
         <span>{"$" + product.price}</span>
       </div>
     </div>

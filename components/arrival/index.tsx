@@ -1,10 +1,9 @@
 import { FC } from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import CustomButton from "../CustomButton";
 import styles from "./arrival.module.css";
 
-type Props = {};
-
-const ArrivalSection: FC = (props: Props) => {
+const ArrivalSection: FC = () => {
   return (
     <section className={`${styles.arrival}`}>
       <Container>
@@ -22,9 +21,7 @@ const ArrivalSection: FC = (props: Props) => {
               Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique
               ex unde!
             </p>
-            <Button variant="danger" className="px-5 py-2 mb-4">
-              Shop Now
-            </Button>
+            <CustomButton className="px-5 py-2 mb-4">Shop Now</CustomButton>
           </div>
         </div>
       </Container>

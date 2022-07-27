@@ -44,12 +44,3 @@
     font-size: 1.1rem;
   }
 }
-
-.carousel > div:last-child button {
-  font-weight: 700;
-}
-
-.carousel > div:last-child button:hover {
-  background-color: transparent;
-  color: #f7444e;
-}
