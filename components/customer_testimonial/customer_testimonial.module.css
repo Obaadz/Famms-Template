@@ -1,0 +1,18 @@
+.item {
+  padding-top: 20px;
+}
+
+.caption h6 {
+  font-weight: 600;
+}
+
+.img,
+.caption {
+  position: unset;
+}
+
+.icon {
+  background-color: #f0424e;
+  border-radius: 50%;
+  padding: 5px;
+}
