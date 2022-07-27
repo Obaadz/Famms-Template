@@ -7,7 +7,7 @@ const SubscribeSection: FC = () => {
   return (
     <section className={` py-5 px-2 d-flex flex-column ${styles.subscribe}`}>
       <div className="col-sm-12 col-md-6 mx-auto text-center">
-        <h5 className="fs-2 fw-bold">Subscribe To Get Discount Offers</h5>
+        <h2 className="fs-2 fw-bold">Subscribe To Get Discount Offers</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor

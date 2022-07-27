@@ -33,12 +33,13 @@ const CustomerTestimonialSection: FC = () => {
               className={`d-block rounded-circle mx-auto ${styles.img}`}
               src="/images/client.webp"
               height={160}
+              width={160}
               alt="First slide"
             />
             <Carousel.Caption
               className={`${styles.caption} col-lg-8 mt-3 mx-auto`}
             >
-              <h6 className="fs-4">Obada Ali</h6>
+              <h3 className="fs-4">Obada Ali</h3>
               <p>
                 Dignissimos reprehenderit repellendus nobis error quibusdam?
                 Atque animi sint unde quis reprehenderit, et, perspiciatis.
@@ -50,12 +51,13 @@ const CustomerTestimonialSection: FC = () => {
               className={`d-block rounded-circle mx-auto ${styles.img}`}
               src="/images/client.webp"
               height={160}
+              width={160}
               alt="First slide"
             />
             <Carousel.Caption
               className={`${styles.caption} col-lg-8 mt-3 mx-auto`}
             >
-              <h6 className="fs-4">Obada Ali</h6>
+              <h3 className="fs-4">Obada Ali</h3>
               <p>
                 Dignissimos reprehenderit repellendus nobis error quibusdam?
                 Atque animi sint unde quis reprehenderit, et, perspiciatis.
@@ -67,12 +69,13 @@ const CustomerTestimonialSection: FC = () => {
               className={`d-block rounded-circle mx-auto ${styles.img}`}
               src="/images/client.webp"
               height={160}
+              width={160}
               alt="First slide"
             />
             <Carousel.Caption
               className={`${styles.caption} col-lg-8 mt-3 mx-auto`}
             >
-              <h6 className="fs-4">Obada Ali</h6>
+              <h3 className="fs-4">Obada Ali</h3>
               <p>
                 Dignissimos reprehenderit repellendus nobis error quibusdam?
                 Atque animi sint unde quis reprehenderit, et, perspiciatis.

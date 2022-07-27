@@ -2,6 +2,7 @@
   background-color: #d5cfd0;
 }
 
-.subscribe h5 {
+.subscribe h2 {
+  font-family: inherit;
   color: #002c3e;
 }
