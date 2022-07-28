@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { Carousel, Container } from "react-bootstrap";
 import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import SectionHeading from "../SectionHeading";
 import styles from "./customer_testimonial.module.css";
 
@@ -29,7 +30,7 @@ const CustomerTestimonialSection: FC = () => {
           prevIcon={PrevIcon}
         >
           <Carousel.Item className={`${styles.item}`}>
-            <img
+            <LazyLoadImage
               className={`d-block rounded-circle mx-auto ${styles.img}`}
               src="/images/client.webp"
               height={160}
@@ -47,7 +48,7 @@ const CustomerTestimonialSection: FC = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item className={`${styles.item}`}>
-            <img
+            <LazyLoadImage
               className={`d-block rounded-circle mx-auto ${styles.img}`}
               src="/images/client.webp"
               height={160}
@@ -65,7 +66,7 @@ const CustomerTestimonialSection: FC = () => {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item className={`${styles.item}`}>
-            <img
+            <LazyLoadImage
               className={`d-block rounded-circle mx-auto ${styles.img}`}
               src="/images/client.webp"
               height={160}

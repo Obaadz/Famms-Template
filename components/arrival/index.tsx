@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Container } from "react-bootstrap";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import CustomButton from "../CustomButton";
 import styles from "./arrival.module.css";
 
@@ -8,7 +9,7 @@ const ArrivalSection: FC = () => {
     <section className={`${styles.arrival}`}>
       <Container>
         <div className="row justify-content-between pt-3">
-          <img
+          <LazyLoadImage
             src="images/arrival-bg.webp"
             alt="Arrival Section Image"
             className="d-none d-lg-block col-lg-4"

@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 type Props = {
   widthInPx: string;
   dark?: boolean;
@@ -5,7 +7,7 @@ type Props = {
 
 const Logo = ({ widthInPx, dark }: Props) => {
   return (
-    <img
+    <LazyLoadImage
       width={widthInPx}
       src={dark ? "images/white_logo.webp" : "images/logo.webp"}
       alt="Logo"
