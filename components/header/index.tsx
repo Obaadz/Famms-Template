@@ -7,6 +7,7 @@ import PagesDropDown from "./PagesDropDown";
 import ShopInfo from "./ShopInfo";
 import styles from "./header.module.css";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 const Header: FC = () => {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -28,9 +29,11 @@ const Header: FC = () => {
     <header ref={headerRef} className={styles.header}>
       <Navbar bg="white" expand="lg">
         <Container>
-          <Navbar.Brand href="/">
-            <Logo widthInPx="250" />
-          </Navbar.Brand>
+          <Link href="/">
+            <Navbar.Brand href="/">
+              <Logo widthInPx="250" />
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto text-uppercase gap-3">
