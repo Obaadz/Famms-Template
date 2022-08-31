@@ -26,7 +26,7 @@ const Header: FC = () => {
   }
 
   return (
-    <header ref={headerRef} className={styles.header}>
+    <header ref={headerRef} className={styles.header} id="header">
       <Navbar bg="white" expand="lg">
         <Container>
           <Link href="/">
